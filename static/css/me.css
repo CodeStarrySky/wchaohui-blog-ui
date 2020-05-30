@@ -22,10 +22,21 @@ a:active {
     width: 100%;
     height: 100%;
 }
+.m-padded-mini {
+    padding: 9px 5px 9px 5px;
+}
+
+.m-imag-size-max {
+    width: 100%;
+    height: 100%;
+}
 .m-div-imag-size {
     width: 52px;
     height: 52px;
-}
+}.m-div-imag-tiny {
+     width: 180px;
+     height: 180px;
+ }
 .m-padded-none {
     padding: 0px;
 }
@@ -91,6 +102,7 @@ a:active {
     margin: 10px 10px 10px 10px;
 
 }
+
 .m-padded-lr-mini {
     padding-left: 1em;
     padding-right: 1em;
@@ -98,6 +110,9 @@ a:active {
 .m-padded-lr {
     padding-left: 2em;
     padding-right: 2em;
+}
+.m-padded-right {
+    padding-right: 1em;
 }
 
 .m-padded-tb-mini {
@@ -160,6 +175,20 @@ a:active {
 .m-font-color-blue {
     color: deepskyblue;
 }
+/**
+转载
+ */
+.m-reprint {
+    color: brown;
+    border-color: brown;
+}
+/**
+转载
+ */
+.m-original {
+    color: deepskyblue;
+    border-color: deepskyblue;
+}
 
 
 /*
@@ -182,6 +211,10 @@ a:active {
  */
 .m-border-radius {
     border-radius: 25px;
+}
+
+.m-border-radius-tiny {
+    border-radius: 15px;
 }
 
 /*
@@ -224,6 +257,87 @@ body {
     margin-left: auto;
 }
 
+/**
+横虚线
+ */
+.m-cross-dotted {
+    border-bottom-style: dotted;
+    border-width: 2px;
+    border-color: #9C9C9C;
+    margin-top: 29px;
+    margin-bottom: 29px;
+    opacity: 0.29;
+
+}
+.m-padded-max {
+    padding-left:25px;
+    padding-right:25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*
+上下居中
+ */
+.m-vCenter {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/*
+赏
+ */
+.m-btn-admire {
+    border-radius: 55%;
+    width: 99px;
+    height:99px;
+    margin:auto;
+    font-size: 52px;
+
+}
+
+.node {
+    width: 12px;
+    color: #fff;
+    height: 12px;
+    border-radius: 50%;
+    margin: 11px 0 0 -8px;
+    display: inline-block;
+    background-color: #38b7ea;
+}
+
+
+/* 提示框小角的小方块 */
+
+.m-inner{
+
+    background-color:#FFF;
+
+    width:10px;
+
+    height:10px;
+
+    border:1px solid #ddd;
+
+    /* 旋转小方块并调整位置形成尖角 */
+
+    position:relative;
+
+    left: -20px;
+    top: -5px;
+
+    transform:rotate(-45deg);
+
+    border-right:0px;
+
+    border-bottom:0px;
+
+
+}
+
+.m-bounced {
+
+}
 
 
 
