@@ -188,6 +188,7 @@ a:active {
 .m-original {
     color: deepskyblue;
     border-color: deepskyblue;
+
 }
 
 
@@ -334,6 +335,13 @@ body {
 
 
 }
+
+.m-but-blue {
+    color: deepskyblue;
+    border-color: deepskyblue;
+    border-width: 1px;
+}
+
 
 
 

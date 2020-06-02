@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,25 +37,25 @@
                 </ul>
 
             </div>
-            <div class="col-md-2 navbar-header text-right">
+            <div class="col-md-2 navbar-header" style="float: right">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="" href="#">
-                    <div class="form-inline navbar-btn  ">
+                <a href="#">
+                    <div class="form-inline navbar-btn">
                         <img class="col-md-2 m-div-imag-size m-padded-none"  src="../static/images/headProtrait.jpg" style="border-radius: 55%;">
-                        <div class="col-md-8 dropdown text-left" style="margin-top: 19px">
-                            <a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <div class="col-md-6 dropdown text-left" style="margin-top: 19px">
+                            <a id="dLabel" style="color: deepskyblue" data-target="#" href="http://example.com" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                 Wchaohui
                                 <span class="caret"></span>
                             </a>
 
-                            <ul class="dropdown-menu" aria-labelledby="dLabel">
-                                <li><a href="#">修改密码</a></li>
-                                <li><a href="#">退出登录</a></li>
+                            <ul class="dropdown-menu " aria-labelledby="dLabel">
+                                <li><a href="#" style="color: deepskyblue">修改密码</a></li>
+                                <li><a href="#" style="color: deepskyblue;">退出登录</a></li>
                             </ul>
                         </div>
                     </div>
@@ -70,8 +70,186 @@
 
 </nav>
 
-<div class="content">
+<div class="content text-center">
+    <div class="col-md-8 col-md-offset-2" >
+        <div class="m-margin-tb-tiny">
+            <div class="btn-group" role="group" aria-label="...">
+                <button type="button" class="btn btn-default btn-lg" style="outline: none">&nbsp;发布&nbsp;</button>
+                <button type="button" class="btn btn-default btn-lg" style="outline: none">&nbsp;列表&nbsp;</button>
+            </div>
+        </div>
+        <div>
+            <form class="form-inline">
+                <div class="form-group">
+        <!--            <label class="sr-only" for="title">标题</label>-->
+                    <input type="text" class="form-control" id="title" placeholder="标题">
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="form-group">
+                    <div class="dropdown">
+        <!--            <label class="sr-only" for="classify">分类</label>-->
+                        <input type="text" class="form-control" id="classify" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" placeholder="分类">
+                        <ul class="dropdown-menu  m-opacity" aria-labelledby="classify" style="min-width: 100%" >
+                            <li><a>技术框架</a></li>
+                            <li><a>心得体会</a></li>
+                            <li><a>技术框架</a></li>
+                            <li><a>心得体会</a></li>
+                        </ul>
+                    </div>
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> 推荐
+                    </label>
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button type="button" class="btn btn-info "  style="color:deepskyblue;background-color: white;outline: none">
+                    <span class="glyphicon glyphicon-search" aria-hidden="true" style="outline: none"></span> 搜索
+                </button>
+            </form>
+        </div>
+        <div class="text-right" style="margin-bottom: 15px">
+            <button type="button" class="btn btn-primary" style="outline: none">新增</button>
+        </div>
+        <!-- 博客表格 -->
+        <div class="table-responsive">
 
+            <table class="table table-bordered table-hover" >
+                <thead>
+                    <tr>
+                        <th class="text-center" style="width: 52px">序号</th>
+                        <th class="text-center">标题</th>
+                        <th class="text-center">类型</th>
+                        <th class="text-center">推荐</th>
+                        <th class="text-center" style="width: 199px">更新时间</th>
+                        <th class="text-center" style="width: 199px">操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="display:table-cell;vertical-align: middle">1</td>
+                        <td style="display:table-cell;vertical-align: middle">我的博客</td>
+                        <td style="display:table-cell;vertical-align: middle">技术</td>
+                        <td style="display:table-cell;vertical-align: middle">是</td>
+                        <td style="display:table-cell;vertical-align: middle">2020-5-20 05：20</td>
+                        <td style="display:table-cell;vertical-align: middle">
+                            <button type="button" class="btn btn-info" style="outline: none">编辑</button>
+                            <button type="button" class="btn btn-danger" style="outline: none">删除</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="display:table-cell;vertical-align: middle">1</td>
+                        <td style="display:table-cell;vertical-align: middle">我的博客</td>
+                        <td style="display:table-cell;vertical-align: middle">技术</td>
+                        <td style="display:table-cell;vertical-align: middle">是</td>
+                        <td style="display:table-cell;vertical-align: middle">2020-5-20 05：20</td>
+                        <td style="display:table-cell;vertical-align: middle">
+                            <button type="button" class="btn btn-info" style="outline: none">编辑</button>
+                            <button type="button" class="btn btn-danger" style="outline: none">删除</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="display:table-cell;vertical-align: middle">1</td>
+                        <td style="display:table-cell;vertical-align: middle">我的博客</td>
+                        <td style="display:table-cell;vertical-align: middle">技术</td>
+                        <td style="display:table-cell;vertical-align: middle">是</td>
+                        <td style="display:table-cell;vertical-align: middle">2020-5-20 05：20</td>
+                        <td style="display:table-cell;vertical-align: middle">
+                            <button type="button" class="btn btn-info" style="outline: none">编辑</button>
+                            <button type="button" class="btn btn-danger" style="outline: none">删除</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="display:table-cell;vertical-align: middle">1</td>
+                        <td style="display:table-cell;vertical-align: middle">我的博客</td>
+                        <td style="display:table-cell;vertical-align: middle">技术</td>
+                        <td style="display:table-cell;vertical-align: middle">是</td>
+                        <td style="display:table-cell;vertical-align: middle">2020-5-20 05：20</td>
+                        <td style="display:table-cell;vertical-align: middle">
+                            <button type="button" class="btn btn-info" style="outline: none">编辑</button>
+                            <button type="button" class="btn btn-danger" style="outline: none">删除</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="display:table-cell;vertical-align: middle">1</td>
+                        <td style="display:table-cell;vertical-align: middle">我的博客</td>
+                        <td style="display:table-cell;vertical-align: middle">技术</td>
+                        <td style="display:table-cell;vertical-align: middle">是</td>
+                        <td style="display:table-cell;vertical-align: middle">2020-5-20 05：20</td>
+                        <td style="display:table-cell;vertical-align: middle">
+                            <button type="button" class="btn btn-info" style="outline: none">编辑</button>
+                            <button type="button" class="btn btn-danger" style="outline: none">删除</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="display:table-cell;vertical-align: middle">1</td>
+                        <td style="display:table-cell;vertical-align: middle">我的博客</td>
+                        <td style="display:table-cell;vertical-align: middle">技术</td>
+                        <td style="display:table-cell;vertical-align: middle">是</td>
+                        <td style="display:table-cell;vertical-align: middle">2020-5-20 05：20</td>
+                        <td style="display:table-cell;vertical-align: middle">
+                            <button type="button" class="btn btn-info" style="outline: none">编辑</button>
+                            <button type="button" class="btn btn-danger" style="outline: none">删除</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="display:table-cell;vertical-align: middle">1</td>
+                        <td style="display:table-cell;vertical-align: middle">我的博客</td>
+                        <td style="display:table-cell;vertical-align: middle">技术</td>
+                        <td style="display:table-cell;vertical-align: middle">是</td>
+                        <td style="display:table-cell;vertical-align: middle">2020-5-20 05：20</td>
+                        <td style="display:table-cell;vertical-align: middle">
+                            <button type="button" class="btn btn-info" style="outline: none">编辑</button>
+                            <button type="button" class="btn btn-danger" style="outline: none">删除</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="display:table-cell;vertical-align: middle">1</td>
+                        <td style="display:table-cell;vertical-align: middle">我的博客</td>
+                        <td style="display:table-cell;vertical-align: middle">技术</td>
+                        <td style="display:table-cell;vertical-align: middle">是</td>
+                        <td style="display:table-cell;vertical-align: middle">2020-5-20 05：20</td>
+                        <td style="display:table-cell;vertical-align: middle">
+                            <button type="button" class="btn btn-info" style="outline: none">编辑</button>
+                            <button type="button" class="btn btn-danger" style="outline: none">删除</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="display:table-cell;vertical-align: middle">1</td>
+                        <td style="display:table-cell;vertical-align: middle">我的博客</td>
+                        <td style="display:table-cell;vertical-align: middle">技术</td>
+                        <td style="display:table-cell;vertical-align: middle">是</td>
+                        <td style="display:table-cell;vertical-align: middle">2020-5-20 05：20</td>
+                        <td style="display:table-cell;vertical-align: middle">
+                            <button type="button" class="btn btn-info" style="outline: none">编辑</button>
+                            <button type="button" class="btn btn-danger" style="outline: none">删除</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="display:table-cell;vertical-align: middle">1</td>
+                        <td style="display:table-cell;vertical-align: middle">我的博客</td>
+                        <td style="display:table-cell;vertical-align: middle">技术</td>
+                        <td style="display:table-cell;vertical-align: middle">是</td>
+                        <td style="display:table-cell;vertical-align: middle">2020-5-20 05：20</td>
+                        <td style="display:table-cell;vertical-align: middle">
+                            <button type="button" class="btn btn-info" style="outline: none">编辑</button>
+                            <button type="button" class="btn btn-danger" style="outline: none">删除</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 页面跳转 -->
+        <nav aria-label="Page navigation">
+            <ul class="pager text-center m-margin-tb-tiny" style="margin-bottom: 99px">
+                <li class="previous " ><a href="#" class="m-box-shadow"><span class="glyphicon glyphicon-arrow-left m-padded-max m-font-color-blue " aria-hidden="true"></span></a></li>
+                <li><span class="btn btn-lg disabled " style="border-radius: 35%;margin-top: 3px;box-shadow: 2px 2px 8px #9C9C9C"><h3 class="m-margin-none m-font-color-blue">15</h3></span></li>
+                <li class="next"><a class="m-box-shadow" href="#"> <span class="glyphicon glyphicon-arrow-right m-padded-max m-font-color-blue" aria-hidden="true"></span></a></li>
+            </ul>
+        </nav>
+    </div>
 
 </div>
 
@@ -82,7 +260,7 @@
         crossorigin="anonymous">
 </script>
 <script>
-
+    $('.dropdown-toggle').dropdown()
 </script>
 </body>
 </html>
