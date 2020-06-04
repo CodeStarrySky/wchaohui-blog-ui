@@ -102,6 +102,9 @@ a:active {
     margin: 10px 10px 10px 10px;
 
 }
+.m-margin-lr {
+    margin:0px 9px 0px 9px !important;
+}
 
 .m-padded-lr-mini {
     padding-left: 1em;
@@ -344,6 +347,18 @@ body {
 
 
 
+.media .media-body .media {
+    background-color: ghostwhite;
+}
+
+
+.media-body>*{
+    margin: 2px 2px 2px 2px;
+}
+
+.media-body>span,.media-body a {
+    opacity: 80%;
+}
 
 
 
